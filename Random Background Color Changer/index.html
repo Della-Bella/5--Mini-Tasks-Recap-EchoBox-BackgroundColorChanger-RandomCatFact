@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Colour</title>
+   </head>
+   <body>
+         <h1>Background colour Random Change</h1>
+         <button onclick="colourChange()" id="colorButton">
+            Change Background Colour
+         </button>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
+
+<!-- Mini-Task 2: Random Background Color Changer
+Goal: Create a button. When the button is clicked, change the background color of the entire page (<body>) 
+    to a random color.
+HTML Needed:
+* A <button> with an ID (e.g., id="colorButton")
+* (Implicitly) The <body> tag of your HTML page.
+JavaScript Steps:
+1. Get a reference to the button using its ID.
+2. Get a reference to the <body> element (you can use document.body).
+3. Add an event listener to the button that listens for a 'click'.
+4. Inside the event listener function:
+    * Generate a random color. A simple way is to create a hex color code:
+        * Start with #.
+        * Generate 6 random characters (0-9 and A-F). You can use Math.random() and Math.floor()
+         combined with a string of possible characters like "0123456789ABCDEF". 
+        Loop 6 times, picking one random character each time and adding it to your color string.
+    * Set the style.backgroundColor property of the document.body to the random color string you generated.
+Key Concepts Practiced:
+* Selecting HTML elements.
+* Adding event listeners.
+* Generating random values (Math.random, Math.floor).
+* String manipulation (building the color code).
+* Changing CSS styles dynamically (element.style).
+* Loops (for generating the color code).
+-->
