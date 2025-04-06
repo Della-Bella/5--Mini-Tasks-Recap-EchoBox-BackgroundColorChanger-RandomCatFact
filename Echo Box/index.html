@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Echo Box</h1>
+
+
+        <input type="text" id="textInput" placeholder="Enter text here...">
+
+        <p id="outputParagraph">Text goes here</p>
+
+   
+        <button onclick="text()" id="echoButton">Enter</button>
+    </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>
+
+<!--Mini-Task 1: Simple Echo Box
+Goal: Create an input field and a button. When the button is clicked, take the text from the input field and display it in a paragraph below.
+HTML Needed:
+* An <input type="text"> with an ID (e.g., id="textInput")
+* A <button> with an ID (e.g., id="echoButton")
+* A <p> tag with an ID where the text will be displayed (e.g., id="outputParagraph")
+JavaScript Steps:
+1. Get references to the input field, the button, and the paragraph using their IDs (document.getElementById or document.querySelector).
+2. Add an event listener to the button that listens for a 'click'.
+3. Inside the event listener function:
+    * Get the current .value from the input field.
+    * Set the .innerHTML of the output paragraph to be the value you just got from the input.
+Key Concepts Practiced:
+* Selecting HTML elements (DOM Manipulation).
+* Adding event listeners (addEventListener).
+* Reading input values (.value).
+* Updating HTML content (.innerHTML).-->

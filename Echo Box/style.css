@@ -1,0 +1,124 @@
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Makes width/height include padding and border */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Modern sans-serif font */
+    background-color: #f4f7f6;
+    /* Light, slightly cool gray background */
+    color: #333;
+    /* Default text color */
+
+    /* --- Centering the container --- */
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    min-height: 100vh;
+    /* Ensure body takes at least full viewport height */
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff;
+    /* White background for the container */
+    padding: 30px 40px;
+    /* Generous padding inside the container */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center text elements inside */
+    max-width: 450px;
+    /* Max width to prevent it getting too large */
+    width: 90%;
+    /* Responsive width for smaller screens */
+
+    /* Arrange items inside the container vertically */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    gap: 20px;
+    /* Space between elements inside the container */
+}
+
+/* Heading Styling */
+h1 {
+    color: #2c3e50;
+    /* Darker blue-gray color */
+    margin-bottom: 10px;
+    /* Extra space below heading */
+    font-weight: 600;
+}
+
+/* Input Field Styling */
+#textInput {
+    width: 100%;
+    /* Take full width of container */
+    padding: 12px 15px;
+    /* Comfortable padding */
+    border: 1px solid #dcdcdc;
+    /* Light gray border */
+    border-radius: 6px;
+    /* Slightly rounded corners */
+    font-size: 1rem;
+    /* Standard font size */
+    transition: border-color 0.3s ease;
+    /* Smooth transition on focus */
+}
+
+#textInput:focus {
+    outline: none;
+    /* Remove default blue outline */
+    border-color: #007bff;
+    /* Highlight with blue border on focus */
+}
+
+/* Output Paragraph Styling */
+#outputParagraph {
+    color: #555;
+    /* Medium gray color for output text */
+    font-style: italic;
+    min-height: 1.2em;
+    /* Prevent layout shift when empty */
+    word-wrap: break-word;
+    /* Ensure long text wraps */
+}
+
+/* Button Styling */
+#echoButton {
+    background-color: #007bff;
+    /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    /* Good padding */
+    border-radius: 6px;
+    /* Match input field corners */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    /* Indicate it's clickable */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    /* Smooth transitions */
+}
+
+#echoButton:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+#echoButton:active {
+    transform: scale(0.98);
+    /* Slight shrink effect on click */
+}
